@@ -57,7 +57,7 @@ public:
     Q_ENUM(Result);
 
     OAuth(Account *account, QObject *parent);
-    ~OAuth();
+    ~OAuth() override;
     void startAuthentification();
     void refreshAuthentification(const QString &refreshToken);
     void openBrowser();
